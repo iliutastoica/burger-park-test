@@ -1,0 +1,100 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.homePage {
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 64px);
+  background-image: -webkit-linear-gradient(top, #8be5c2, #2bbaa8);
+  background-image: linear-gradient(to bottom, #8be5c2, #2bbaa8);
+}
+
+.homeContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  
+  .title {
+    animation: fadeInUp 0.8s ease-out;
+    margin-bottom: 1rem;
+    color: #1a237e;
+  }
+  
+  .subtitle {
+    animation: fadeInUp 0.8s ease-out 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    margin-bottom: 2rem;
+    color: #303f9f;
+  }
+  
+  .ctaButton {
+    animation: scaleIn 0.5s ease-out 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    padding: 12px 32px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #ff6b6b 30%, #ff8e53 90%);
+    box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+    
+    &:hover {
+      background: linear-gradient(45deg, #ff8e53 30%, #ff6b6b 90%);
+      transform: translateY(-2px);
+      transition: transform 0.2s ease;
+    }
+  }
+}
+
+.features {
+  padding: 2rem 0;
+
+  &:hover > .gridCard:not(:hover) .featureCard {
+    filter: brightness(0.8) saturate(0) blur(4px);
+  }
+  
+  .featureCard {
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: scaleIn 0.5s ease-out;
+    background: rgba(255, 255, 255, 0.9);
+    
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    h6 {
+      color: #1a237e;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      color: #424242;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.userMenu {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+
+  button {
+    outline: none;
+    border: none;
+    transition: all 0.5s ease-in-out;
+
+    &:focus, &:focus-visible {
+      outline: 1px auto #d2a22b;
+    }
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: #d2a22b;
+      background: none;
+      outline: none;
+    }
+  }
+}
+

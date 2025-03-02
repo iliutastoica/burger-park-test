@@ -1,0 +1,34 @@
+.restaurantBooking {
+  padding: 2rem 0;
+
+  .bookingForm {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .title {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #7f8c8d;
+      margin-bottom: 2rem;
+    }
+
+    .alert {
+      margin-bottom: 2rem;
+    }
+
+    .datePicker,
+    .timePicker {
+      width: 100%;
+    }
+
+    .submitButton {
+      margin-top: 1rem;
+    }
+  }
+}
