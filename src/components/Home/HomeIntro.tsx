@@ -29,10 +29,10 @@ const HomeIntro: React.FC<{title?: string;}> = ({title}) => {
             </filter>
           </defs>
           <symbol id="s-text" filter="url(#f1)">
-            <text text-anchor="middle" x="50%" y="70%">{text}</text>
+            <text textAnchor="middle" x="50%" y="70%">{text}</text>
           </symbol>
           <symbol id="s-text2" filter="url(#f4)">
-            <text text-anchor="middle" x="50%" y="70%">{text}</text>
+            <text textAnchor="middle" x="50%" y="70%">{text}</text>
           </symbol>
 
           <g className="g-ants">
